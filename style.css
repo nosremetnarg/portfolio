@@ -20,10 +20,18 @@
     background-position: 80%;
     height: 200px;
 }
+/* creative design work text */
 .hero-img h3 {
     background-color: var(--primary-color);
-
+    
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 250px;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 2vw;
 }
+
 /* header styles */
 header {
     padding: 20px 35px;
@@ -91,8 +99,6 @@ header nav ul li a:hover {
     width: 150px;
     display: inline-block;
     border-right: 3px solid;
-    
-    
 }
 .flex-row {
     text-align: right;
@@ -101,6 +107,8 @@ header nav ul li a:hover {
 
 .about-me-p {
     font-size: 15px;
+    margin-right: 40px;
+    
 }
 .about-text {
     margin: auto;
@@ -109,9 +117,12 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     height: 100px;
     flex: 12;
+    margin-top: 10px;
+
 }
 .about-text p  {
     margin: auto;
+    margin-right: 40px;
 }
 
 
@@ -138,4 +149,16 @@ ul {
     font-weight: lighter;
     font-size: 1.5vw;
     
+  }
+  /* media section */
+
+  @media screen and (min-width: 601px) {
+      .hero-img h3 {
+          width: 27%;
+      }
+  }
+  @media screen and (max-width: 600px) {
+      .hero-img h3 {
+          width: 27%;
+      }
   }
