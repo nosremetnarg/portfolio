@@ -4,9 +4,16 @@
     box-sizing: border-box;
 }
 :root {
-    --primary-color: #fce138;
-    --secondary-color: #024e76;
-    --tertiary-color: #39a6b2;
+    --primary-color: #000000;
+    --secondary-color: #FFF;
+    --tertiary-color: #0000ff;
+    --quad-color: yellow;
+}
+section {
+    overflow-wrap: normal;
+}
+body {
+    background-color: lavender;
 }
 .hero-img {
     display: flex;
@@ -23,7 +30,7 @@
 /* creative design work text */
 .hero-img h3 {
     background-color: var(--primary-color);
-    
+    color: var(--secondary-color);
     position: absolute;
     margin-top: 50px;
     margin-left: 250px;
@@ -54,10 +61,10 @@ header h1  {
     font-size: 36px;
     color: var(--primary-color);
     margin: 0;
-    padding-right: 50px;
+    padding: 1px;
     background-color: var(--secondary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    height: 50px;
+    text-shadow: 0 0 5px rgba(f, f, f, 0.2);
+    border-radius: 5px;
     justify-content: right;
 }
 header a {
@@ -77,8 +84,8 @@ header nav ul {
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.55vw;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 2vw;
+  text-shadow: 0 0 5px rgba(f, f, f, 0.2);
 }
 header nav ul li a:hover {
   background: var(--primary-color);
@@ -86,9 +93,21 @@ header nav ul li a:hover {
   border-radius: 15px;
   text-shadow: none;
 }
+/* section titles */
 .intro {
     background-color: lavender;
     display: flex;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    align-items: center;
+    background-position: 80%;
+    height: 100%;
+
+
 }
 .section-title {
     font-size: 25px;
@@ -97,14 +116,17 @@ header nav ul li a:hover {
     padding-right: 5px;
     display: flex;
     width: 150px;
-    display: inline-block;
     border-right: 3px solid;
+    height: 25%;
 }
 .flex-row {
     text-align: right;
     margin: auto;
+    display: flex;
 } 
-
+.flex-row h2 {
+    padding-top: 20px;
+}
 .about-me-p {
     font-size: 15px;
     margin-right: 40px;
@@ -115,7 +137,7 @@ header nav ul li a:hover {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
-    height: 100px;
+    height: 100%;
     flex: 12;
     margin-top: 10px;
 
@@ -136,6 +158,10 @@ header nav ul li a:hover {
 .section-title {
     margin-right: 20px;
 }
+.primary-border {
+   border-color: var(--primary-color);
+}
+
 /* contact me links */
 ul {
     display: flex;
@@ -147,11 +173,97 @@ ul {
   ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.5vw;
-    
+    font-size: 1.5vw; 
   }
-  /* media section */
+   /* grid styles */
+  .grid-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    margin: 5px auto;
+    align-items: center;
+    border-radius: 2px;
+    font-size: 35px;
+    background-color: aquamarine;
+  }
+  .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-flow: dense;
+    width: 100%;
+  }
+  .container {
+      padding-bottom: 50px;
+  }
+  .item-1 {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 4;
+    background-image: url("../portfolio/Assets/run-buddy.jpg");
+    background-size: cover;
+    background-position: top;
+    
 
+  }
+  .item-2 {
+    grid-row: 3 / span 2;
+    grid-column: 5 /span 2;
+    background-image: url("../portfolio/Assets/deltaraeTheLight.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .item-3 {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 2;
+    background-image: url("../portfolio/Assets/deltaRaeCarryTheFire.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+  .item-4 {
+    grid-row: 5 / span 2;
+    grid-column: 3 / span 2;
+    background-image: url("../portfolio/Assets/deltaRaeAfterItAll.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+  .item-5 {
+    grid-row: 1 / span 2;
+    grid-column: 5 / span 2;
+    background-image: url("../portfolio/Assets/black\ white\ swirl.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+  .item-2 {
+      
+  }
+  
+  /* footer */
+footer h4, footer div {
+    text-align: center;
+    width: 100%;
+    color: var(--secondary-color);
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--primary-color);
+    width:100%;
+    padding: 40px 35px;
+    position: fixed;
+    bottom: 0px;
+    height: 10px;
+    
+    
+} 
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+  /* media section */
+/*
   @media screen and (min-width: 601px) {
       .hero-img h3 {
           width: 27%;
@@ -162,3 +274,4 @@ ul {
           width: 27%;
       }
   }
+  */
