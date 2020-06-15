@@ -103,29 +103,35 @@ header nav ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
     overflow: auto;
-    align-items: center;
+    align-items: right;
     background-position: 80%;
     height: 100%;
-
+    
 
 }
 .section-title {
     font-size: 25px;
     color: slateblue; 
     padding-left: 50px;
-    padding-right: 5px;
+    padding-right: -5px;
     display: flex;
     width: 150px;
-    border-right: 3px solid;
+    
     height: 25%;
 }
 .flex-row {
     text-align: right;
     margin: auto;
     display: flex;
+   
 } 
+.about-text ul {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 .flex-row h2 {
-    padding-top: 20px;
+    padding-top: 0px;
+    text-align: right;
 }
 .about-me-p {
     font-size: 15px;
@@ -140,6 +146,8 @@ header nav ul li a:hover {
     height: 100%;
     flex: 12;
     margin-top: 10px;
+    border-left: 1.2px solid;
+    padding-left: 30px;;
 
 }
 .about-text p  {
@@ -157,11 +165,16 @@ header nav ul li a:hover {
 
 .section-title {
     margin-right: 20px;
-}
-.primary-border {
-   border-color: var(--primary-color);
+    text-align: right;
 }
 
+.primary-border {
+   border-color: var(--primary-color);
+   
+}
+ {
+    border-right: 3px solid;
+}
 /* contact me links */
 ul {
     display: flex;
@@ -258,6 +271,9 @@ ul {
       position: absolute;
       z-index: 2;
       margin-top: 80px;
+  }
+  .grid-background5 a, .grid-background4 a, .grid-background3 a {
+      color: grey;
   }
   .grid-background2 {
     background-color: var(--secondary-color);
