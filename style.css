@@ -172,9 +172,9 @@ header nav ul li a:hover {
    border-color: var(--primary-color);
    
 }
- {
+ /* {
     border-right: 3px solid;
-}
+} */
 /* contact me links */
 ul {
     display: flex;
@@ -220,7 +220,7 @@ ul {
     text-align: left;   
     padding-right: 40px;    
 }
-  }
+  
   .container {
       padding-bottom: 50px;
   }
@@ -261,6 +261,13 @@ ul {
     grid-row: 1 / span 2;
     grid-column: 5 / span 2;
     background-image: url("../portfolio/Assets/black\ white\ swirl.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+  .item-6 {
+    grid-row: 5 / span 2;
+    grid-column: 5 / span 2;
+    background-image: url("../portfolio/Assets/hat.png");
     background-size: cover;
     background-position: top;
   }
