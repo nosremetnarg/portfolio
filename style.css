@@ -6,14 +6,15 @@
 :root {
     --primary-color: #000000;
     --secondary-color: #FFF;
-    --tertiary-color: #0000ff;
-    --quad-color: yellow;
+    --tertiary-color: #494949;
+    --quad-color: #7c7a7a;
+    --five-color: #ff5d73;
 }
-section {
-    overflow-wrap: normal;
-}
+/* section {
+    overflow-wrap: hidden;
+} */
 body {
-    background-color: lavender;
+    background-color: var(--secondary-color);
 }
 .hero-img {
     display: flex;
@@ -28,7 +29,7 @@ body {
     height: 200px;
 }
 /* creative design work text */
-.hero-img h3 {
+.hero-img h3 { 
     background-color: var(--primary-color);
     color: var(--secondary-color);
     position: absolute;
@@ -42,7 +43,7 @@ body {
 /* header styles */
 header {
     padding: 20px 35px;
-    background-color: var(--tertiary-color);
+    background-color: var(--quad-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -56,13 +57,15 @@ header {
     background-position: 80%;
     z-index: 9999;
 }
-header h1  {
+header h1  
+/* Grant Emerson title of webpage */
+{
     font-weight: bold;
     font-size: 36px;
     color: var(--primary-color);
     margin: 0;
     padding: 1px;
-    background-color: rgba(247, 245, 245, .5);
+    background-color: var(--quad-color);
     text-shadow: 0 0 5px rgba(f, f, f, 0.2);
     border-radius: 5px;
     justify-content: right;
@@ -88,14 +91,14 @@ header nav ul li a {
   text-shadow: 0 0 5px rgba(f, f, f, 0.2);
 }
 header nav ul li a:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
+  background: var(--tertiary-color);
+  color: var(--five-color);
   border-radius: 15px;
   text-shadow: none;
 }
 /* section titles */
 .intro {
-    background-color: lavender;
+    background-color: var(--secondary-color);
     display: flex;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -111,12 +114,11 @@ header nav ul li a:hover {
 }
 .section-title {
     font-size: 25px;
-    color: slateblue; 
+    color: var(--five-color); 
     padding-left: 50px;
     padding-right: -5px;
-    display: flex;
+    display: right;
     width: 150px;
-    
     height: 25%;
 }
 .flex-row {
@@ -134,7 +136,7 @@ header nav ul li a:hover {
     text-align: right;
 }
 .about-me-p {
-    font-size: 15px;
+    font-size: 20px;
     margin-right: 40px;
     
 }
@@ -150,12 +152,6 @@ header nav ul li a:hover {
     padding-left: 30px;;
 
 }
-.about-text p  {
-    margin: auto;
-    margin-right: 40px;
-}
-
-
 .cheese {
     margin-bottom: auto;
     display: flex;
@@ -193,7 +189,7 @@ ul {
   .grid-item {
     display: flex;
     width: 100%;
-    justify-content: ;
+    
     text-align: left;
     border: 5px solid rgba(0, 0, 0, 0.2);
     margin: 5px auto;
@@ -207,12 +203,6 @@ ul {
  
   
   .grid-container {
-      /*
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-auto-flow: dense;*/
     display: grid;
     grid-template-columns: 100px 100px 100px 100px 100px 100px;
     grid-template-rows: 60px 60px 60px 60px 60px 60px;
@@ -220,7 +210,6 @@ ul {
     text-align: left;   
     padding-right: 40px;    
 }
-  
   .container {
       padding-bottom: 50px;
   }
@@ -305,62 +294,9 @@ ul {
     border: 1px white;
     border-radius: 5px;
 }
-
-  
-  
-  /* GRID */
-  /*
-.work-grid-container {
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 150px 150px;
-    grid-gap: 10px;
-    justify-content: center;    
-    padding-right: 40px;    
-}
-.work-grid-item {    
-    text-align: center;
-    font-size: 30px;
-}
-.item1 img {
-   height: 150px;
-   width: 200px;
-   border-radius: 15px;
-}
-.item2 img {
-    height: 150px;
-    width: 200px;
-    border-radius: 15px;
-}
-.item3 img {
-    height: 150px;
-    width: 200px;
-    border-radius: 15px;
-}
-.item4 img {
-    height: 150px;
-    width: 200px;
-    border-radius: 15px;
-}
-.item5 {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
-}
-.item5 img {
-height:310px;
-width:410px;
-border-radius: 15px;
-}
-.work-grid-container h3 {
-    color: rgba(156, 67, 134, 0.7);
-    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    font-size: 15px;
-    display: flex;
-    text-align: center;
-}
-*/
-  /*END GRID*/
-  /* footer */
+/* .contact {
+padding-bottom: 50%;
+} */
 footer h4, footer div {
     text-align: center;
     width: 100%;
@@ -374,7 +310,7 @@ footer {
     width:100%;
     padding: 40px 35px;
     position: fixed;
-    bottom: 0px;
+    padding-bottom: 50px;
     height: 10px;
     
     
@@ -405,7 +341,7 @@ footer div {
         font-size: 20px;
     }
     footer h2, footer div {
-        text-align: center;
+        text-align: right;
         width: 100%;
     }
 }
@@ -421,8 +357,8 @@ footer div {
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */ 
 @media screen and (max-width: 575px) {
 
-.section-title {
+/* .section-title {
     width: 95%;
-}
+} */
 
 }
